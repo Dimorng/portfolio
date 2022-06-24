@@ -1,0 +1,19 @@
+@import url("./typography.css");
+@import url("./navbar.css");
+@import url("./color-theme.css");
+@import url("./about.css");
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Nunito";
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
+}

@@ -1,0 +1,119 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.about__name {
+  margin: 0;
+
+  font-family: "Courgette";
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: var(--text-color-dark);
+}
+
+.about__job-container {
+  margin: 0.6em 0em;
+  margin-bottom: 1em;
+  width: 80vw;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.about__job {
+  color: var(--text-color-darker);
+}
+
+.about__job-description {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.about__social {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.about__code-social,
+.about__contact {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.link-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-size: 0.8rem;
+  color: var(--text-color);
+  position: relative;
+}
+
+.link-icon:hover .link-icon__img {
+  transform: translateY(-0.3em);
+}
+
+.link-icon:hover .link-icon__text {
+  color: var(--text-color-dark);
+  width: auto;
+  height: auto;
+  top: 100%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.link-icon__img {
+  transition: transform 300ms;
+  width: 2em;
+}
+
+.link-icon__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: top 300ms, opacity 500ms;
+}
+
+.link-icon--phone .link-icon__img {
+  height: 2em;
+  width: auto;
+}
+
+.about__know-more {
+  position: absolute;
+  bottom: 1em;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.about__scroll-down-icon {
+  width: 1.5em;
+  transition: transform 300ms;
+}
+
+.moveup {
+  transform: translateY(0.3em);
+}

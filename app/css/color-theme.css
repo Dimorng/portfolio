@@ -1,0 +1,18 @@
+:root {
+  --hue: 0;
+  --saturation: 0%;
+  --lightness-initial: 56%;
+
+  --lightness-darker: calc(var(--lightness-initial) - 30%);
+  --lightness-dark: calc(var(--lightness-initial) - 20%);
+
+  --text-color: hsl(var(--hue), var(--saturation), var(--lightness-initial));
+
+  --text-color-darker: hsl(
+    var(--hue),
+    var(--saturation),
+    var(--lightness-darker)
+  );
+
+  --text-color-dark: hsl(var(--hue), var(--saturation), var(--lightness-dark));
+}
